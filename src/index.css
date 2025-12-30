@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-black text-white font-inter;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131315;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F2BD35;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFDE3B;
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-track {
+  background: #131315;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #F2BD35;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  margin-top: -0.5rem;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #131315;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #F2BD35;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  border: none;
+}

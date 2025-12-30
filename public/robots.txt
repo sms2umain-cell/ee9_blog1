@@ -1,0 +1,25 @@
+User-agent: *
+
+# Allow public pages
+Allow: /
+Allow: /category/
+Allow: /post/
+Allow: /tag/
+Allow: /guides
+Allow: /glossary
+Allow: /tools
+Allow: /about
+Allow: /contact
+Allow: /responsible-gambling
+Allow: /editorial-policy
+Allow: /privacy-policy
+
+# Disallow admin and private pages
+Disallow: /admin
+Disallow: /login
+Disallow: /dashboard
+Disallow: /account
+Disallow: /checkout
+
+# Sitemap
+Sitemap: https://ee9.com/sitemap.xml
