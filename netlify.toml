@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # 禁用智能密钥检测，因为 Firebase 类型定义文件中的示例文本会被误报
+  SECRETS_SCAN_SMART_DETECTION_ENABLED = "false"
