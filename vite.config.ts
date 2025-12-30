@@ -8,7 +8,8 @@ const isPreview = process.env.IS_PREVIEW ? true : false;
 // https://vite.dev/config/
 export default defineConfig({
   define: {
-    __BASE_PATH__: JSON.stringify(base),
+    __BASE_PATH__: JSON.stringify(process.env.BASE_PATH || "/"),
+    __SITE_URL__: JSON.stringify(process.env.VITE_SITE_URL || "https://ee9.cc"),
     __IS_PREVIEW__: JSON.stringify(isPreview),
     __READDY_PROJECT_ID__: JSON.stringify(process.env.PROJECT_ID || ""),
     __READDY_VERSION_ID__: JSON.stringify(process.env.VERSION_ID || ""),
